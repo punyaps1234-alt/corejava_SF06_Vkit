@@ -10,19 +10,35 @@ package Com.tnsif.accessmodifierdemo;
 public class Accessdemo {
 	
 	// public 
-		  int a=9;
-		String s="guru";
+		  private int a=9;
+		private String s="guru";
 		
-		 void display() { 
+		 public void display() { 
 			System.out.println("welcome to java");
 		}
 		
 		public static void main(String[] args) {
 			Accessdemo obj=new Accessdemo();
-			System.out.println(obj.a);
-			System.out.println(obj.s);
+			System.out.println(obj.getA());
+			System.out.println(obj.getS());
 			
 			obj.display();
+		}
+
+		public String getS() {
+			return s;
+		}
+
+		public void setS(String s) {
+			this.s = s;
+		}
+
+		public int getA() {
+			return a;
+		}
+
+		public void setA(int a) {
+			this.a = a;
 		}
 
 }

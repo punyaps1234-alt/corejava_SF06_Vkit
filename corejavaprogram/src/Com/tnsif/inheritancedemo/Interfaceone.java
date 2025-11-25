@@ -1,0 +1,6 @@
+package Com.tnsif.inheritancedemo;
+//interface to interface (multiple inheritance)
+public interface Interfaceone {
+void print();
+
+}

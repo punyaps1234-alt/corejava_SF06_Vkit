@@ -16,4 +16,5 @@ public class Comparabledemo {
 		for(Person pr:p) {
 			pr.displayinfo();
 		}
+	}
 }
